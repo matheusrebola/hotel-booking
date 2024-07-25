@@ -1,13 +1,13 @@
-package hotelbooking.repositorys;
+package hotelbooking.repositories;
 
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import hotelbooking.entities.Usuarios;
+import hotelbooking.entities.Reservas;
 
 @Repository
-public interface UsuariosRepository extends JpaRepository<Usuarios, UUID> {
+public interface ReservasRepository extends JpaRepository<Reservas, UUID> {
 
 }

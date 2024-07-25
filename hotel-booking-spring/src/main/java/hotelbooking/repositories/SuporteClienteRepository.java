@@ -1,4 +1,4 @@
-package hotelbooking.repositorys;
+package hotelbooking.repositories;
 
 import java.util.UUID;
 
