@@ -1,5 +1,11 @@
 package hotelbooking.dtos;
 
-public record OfertasEspeciaisCreateDto() {
+import java.time.LocalDateTime;
+
+public record OfertasEspeciaisCreateDto(
+		String descricao,
+		Float desconto,
+		LocalDateTime dataInicio,
+		LocalDateTime dataFim) {
 
 }

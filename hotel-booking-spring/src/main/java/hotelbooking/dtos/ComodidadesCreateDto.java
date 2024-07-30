@@ -1,5 +1,7 @@
 package hotelbooking.dtos;
 
-public record ComodidadesCreateDto() {
+public record ComodidadesCreateDto(
+		String nome,
+		String descricao) {
 
 }

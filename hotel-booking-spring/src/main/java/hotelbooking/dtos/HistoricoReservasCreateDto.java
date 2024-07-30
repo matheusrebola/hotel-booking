@@ -1,5 +1,8 @@
 package hotelbooking.dtos;
 
-public record HistoricoReservasCreateDto() {
+import java.time.LocalDateTime;
+
+public record HistoricoReservasCreateDto(
+		LocalDateTime dataReserva) {
 
 }

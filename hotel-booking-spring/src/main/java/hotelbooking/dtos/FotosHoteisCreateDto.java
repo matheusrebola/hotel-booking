@@ -1,5 +1,7 @@
 package hotelbooking.dtos;
 
-public record FotosHoteisCreateDto() {
+public record FotosHoteisCreateDto(
+		String urlFoto,
+		String descricao) {
 
 }
