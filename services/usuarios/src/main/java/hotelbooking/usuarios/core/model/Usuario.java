@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "tb_usuarios")
+@Table(name = "tb_usuarios", schema = "hotelbooking")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter

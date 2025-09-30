@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "tb_historico_reservas", schema = "hotel-booking", indexes = {
+@Table(name = "tb_historico_reservas", schema = "hotelbooking", indexes = {
         @Index(name = "idx_historico_usuario_id", columnList = "usuario_id"),
         @Index(name = "idx_historico_dt_reserva", columnList = "dt_reserva")
 })

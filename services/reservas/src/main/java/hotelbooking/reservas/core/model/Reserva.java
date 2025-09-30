@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "tb_reservas", schema = "hotel-booking", indexes = {
+@Table(name = "tb_reservas", schema = "hotelbooking", indexes = {
         @Index(name = "idx_reserva_dt_checkin", columnList = "dt_checkin"),
         @Index(name = "idx_reserva_qnt_quartos", columnList = "qnt_quartos"),
         @Index(name = "idx_reserva_status_reserva", columnList = "status_reserva")
@@ -41,7 +41,7 @@ public class Reserva {
     private BigDecimal valor;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "status_reserva")
+    @Column(name = "status_reserva", length = 15)
     private EReserva reserva;
 
     @Column(name = "criado_em")
