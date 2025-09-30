@@ -1,4 +1,4 @@
-package hotelbooking.usuarios.core.models;
+package hotelbooking.usuarios.core.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

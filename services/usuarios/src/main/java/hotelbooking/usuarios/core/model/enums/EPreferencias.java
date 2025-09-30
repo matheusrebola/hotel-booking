@@ -1,4 +1,4 @@
-package hotelbooking.usuarios.core.models.enums;
+package hotelbooking.usuarios.core.model.enums;
 
 public enum EPreferencias {
     AVIAO, ONIBUS, TREM, CARRO,

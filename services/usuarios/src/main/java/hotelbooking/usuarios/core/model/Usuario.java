@@ -1,6 +1,6 @@
-package hotelbooking.usuarios.core.models;
+package hotelbooking.usuarios.core.model;
 
-import hotelbooking.usuarios.core.models.enums.EPreferencias;
+import hotelbooking.usuarios.core.model.enums.EPreferencias;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

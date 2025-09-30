@@ -1,6 +1,6 @@
 package hotelbooking.usuarios.core.repository;
 
-import hotelbooking.usuarios.core.models.Usuario;
+import hotelbooking.usuarios.core.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
