@@ -15,6 +15,7 @@ public class LoginMapper {
         return Login.builder()
                 .email(req.email())
                 .senha(req.senha())
+                .tipo(EUsuario.CLIENTE)
                 .build();
     }
 
@@ -22,7 +23,7 @@ public class LoginMapper {
         return LoginRes.builder()
                 .id(login.getId())
                 .token(UUID.randomUUID())
-                .tipo(EUsuario.CLIENTE)
+                .tipo(login.getTipo())
                 .build();
     }
 }

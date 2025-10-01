@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface LoginRepository extends JpaRepository<Login,Short> {
-    Login findyEmail(String email);
+    Login findLoginByEmail(String email);
 }

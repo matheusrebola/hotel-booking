@@ -1,5 +1,6 @@
 package hotelbooking.usuarios.core.model;
 
+import hotelbooking.usuarios.core.model.enums.EUsuario;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,6 +26,10 @@ public class Login {
 
     @Column
     private LocalDateTime ultimoLogin;
+
+    @Enumerated(EnumType.STRING)
+    @Column
+    private EUsuario tipo;
 
     @Column
     private LocalDateTime expiraEm;
