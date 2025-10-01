@@ -65,4 +65,7 @@ public class Hotel {
 
     @OneToMany(mappedBy = "hotel")
     private Set<Quarto> quartos;
+
+    @OneToMany(mappedBy = "hotel")
+    private Set<Avaliacao> avaliacoes;
 }

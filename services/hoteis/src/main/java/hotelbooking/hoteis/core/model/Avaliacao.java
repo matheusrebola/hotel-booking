@@ -32,8 +32,9 @@ public class Avaliacao {
     @Column(name = "dt_avaliacao", nullable = false, updatable = false)
     private LocalDateTime avaliacao;
 
-    @Column(name = "hotel_id", nullable = false, updatable = false)
-    private Long hotel;
+    @ManyToOne
+    @JoinColumn(name = "hotel_id", nullable = false)
+    private Hotel hotel;
 
     @Column(name = "usuario_id", nullable = false, updatable = false)
     private Long usuario;
