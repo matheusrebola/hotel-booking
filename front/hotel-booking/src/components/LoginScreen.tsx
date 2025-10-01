@@ -18,7 +18,7 @@ export default function LoginScreen({ onLogin, onCadastro }: LoginScreenProps) {
     setLoading(true);
 
     try {
-      const response = await fetch(`${API_USUARIOS}/v1/autenticacao/login`, {
+      const response = await fetch(`${API_USUARIOS}/v1/usuarios/autenticacao`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, senha })

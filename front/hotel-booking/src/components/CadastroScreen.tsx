@@ -12,7 +12,7 @@ export default function CadastroScreen({ onVoltar }: CadastroScreenProps) {
     senha: '',
     telefone: '',
     dataNascimento: '',
-    preferenciaViagem: 'LAZER'
+    preferencia: 'LAZER'
   });
   const [sucesso, setSucesso] = useState(false);
   const [erro, setErro] = useState('');
@@ -21,12 +21,14 @@ export default function CadastroScreen({ onVoltar }: CadastroScreenProps) {
   const handleSubmit = async () => {
     setErro('');
     setLoading(true);
+    console.log(formData)
 
     try {
-      const response = await fetch(`${API_USUARIOS}/v1/cadastro`, {
+      const response = await fetch(`${API_USUARIOS}/v1/usuarios/cadastro`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
+        
       });
 
       if (!response.ok) {
@@ -100,8 +102,8 @@ export default function CadastroScreen({ onVoltar }: CadastroScreenProps) {
             <div style={{ marginBottom: '20px' }}>
               <label style={{ display: 'block', marginBottom: '5px', color: '#555' }}>Preferência de Viagem</label>
               <select
-                value={formData.preferenciaViagem}
-                onChange={(e) => setFormData({ ...formData, preferenciaViagem: e.target.value })}
+                value={formData.preferencia}
+                onChange={(e) => setFormData({ ...formData, preferencia: e.target.value })}
                 style={{ width: '100%', padding: '10px', border: '1px solid #ddd', borderRadius: '4px' }}
               >
                 <option value="LAZER">Lazer</option>
